@@ -1,5 +1,6 @@
 # my-first-electron-apps
 Author: Paulo Deleso
+<br>
 **Crypto App**
 <br>
 <p>System Setup</p>
@@ -16,6 +17,7 @@ Crypto App Screenshots:
 <br>
 
 **SYSTEM INFO APP**
+<br>
 Short Description:
 The Application is used to display informations about the system unit you are using.
 System Info App Screenshots:
