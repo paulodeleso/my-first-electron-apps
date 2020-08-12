@@ -1,0 +1,14 @@
+{
+  "name": "system-monitor",
+  "version": "1.0.0",
+  "description": "simple system monitor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Paulo Deleso",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.2.0"
+  }
+}
