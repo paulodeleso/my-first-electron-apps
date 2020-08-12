@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/takeWhile';
 import 'rxjs/add/operator/do';
-import { interval } from 'rxjs'
-import { takeWhile, tap } from 'rxjs/operators'
 
 
 @Component({
@@ -12,20 +11,18 @@ import { takeWhile, tap } from 'rxjs/operators'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
-
-
 export class AppComponent {
 
   max     = 1;
   current = 0;
 
   start() {
-    const duration = interval(100);
-duration.pipe(
-takeWhile(_ => !this.isFinished),
-tap(i => this.current += 0.1))
-.subscribe();
+    const interval = Observable.interval(100);
+    
+    interval
+      .takeWhile(_ => !this.isFinished )
+      .do(i => this.current += 0.1)
+      .subscribe();
   }
 
    /// finish timer
@@ -52,12 +49,7 @@ tap(i => this.current += 0.1))
   get isFinished() {
     return this.currentVal >= this.maxVal;
   }
-  
-  
-  title = 'angular-electron';
 
 
 
 }
-
-
