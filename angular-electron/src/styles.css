@@ -1,7 +1,8 @@
 @import 'bulma/css/bulma.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 body{
-    font-family: Palatino Roman;
+    font-family: 'Roboto', sans-serif;
 }
 
 [_nghost-lhs-c25] {
@@ -18,6 +19,8 @@ body{
 }
 
 .content{
+    height: 100vh;
+    margin-top: 40px;
 }
 
 .input-parts {
@@ -26,4 +29,13 @@ body{
 
 .input{
     width: 70%;
+}
+
+.timer-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+button{
+    margin: 20px;
 }

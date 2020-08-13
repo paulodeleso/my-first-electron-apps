@@ -6,7 +6,7 @@ const path = require('path');
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width:600,
+    width:400,
     height: 600,
     backgroundColor: '#fffff',
     icon: `${__dirname}\\dist\\assets\\logo.png`,
@@ -25,7 +25,7 @@ function createWindow () {
 
 
   //// uncomment below to open the DevTools.
- win.webContents.openDevTools()
+ //win.webContents.openDevTools()
 
   // Event when the window is closed.
   win.on('closed', function () {

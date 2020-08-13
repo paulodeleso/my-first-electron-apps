@@ -1,6 +1,6 @@
 <main class="content">
         
-  <h1>Electron Timer</h1>
+  <h1>Angular Timer</h1>
 
   <div class="progress-wrapper" *ngIf="maxVal">
 
@@ -24,7 +24,7 @@
 
   <div class="controls-wrapper">
           <div class="input-parts">
-            <label>Seconds</label>
+            <label class="timer-label">Seconds</label>
             <input class="input" placeholder="number of seconds" type="text" 
             [(ngModel)]="max"
             (keydown)="reset()">
