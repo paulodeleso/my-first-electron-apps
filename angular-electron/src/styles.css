@@ -1,1 +1,29 @@
-@import 'bulma/css/bulma.css'
+@import 'bulma/css/bulma.css';
+
+body{
+    font-family: Palatino Roman;
+}
+
+[_nghost-lhs-c25] {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.progress-wrapper{
+    display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.content{
+}
+
+.input-parts {
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 70%;
+}
